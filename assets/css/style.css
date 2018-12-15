@@ -8,8 +8,6 @@
 body{
     width: 80%;
     margin-left: 10%;
-   
-   
 }
 
 /* Setting Header Backgroud for all pages*/
@@ -79,6 +77,7 @@ a:hover {
     font-size: 12px;
     padding-left:10px;
     padding-right:10px;
+    margin-bottom: 10%;
 
 }
 
