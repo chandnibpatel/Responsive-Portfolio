@@ -1,12 +1,15 @@
 /* ------------------------------------------------------------------------------------------------------------------*/
 /*               CSS Styling for Index, Portfolio and Contact Page for Basic Portfolio                               */
 /* ------------------------------------------------------------------------------------------------------------------*/
-
+* {
+    box-sizing: border-box;
+}
 /* body Styling for all pages */
 body{
-    width: 960px;
-    margin-left: 15%;
-    margin-top: 0%;
+    width: 80%;
+    margin-left: 10%;
+   
+   
 }
 
 /* Setting Header Backgroud for all pages*/
@@ -21,7 +24,7 @@ body{
     height: 40px;
     color: #fff;
     margin-bottom: 0%;
-    margin-left: 15%;
+    margin-left:15%;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 5px;
@@ -34,14 +37,14 @@ body{
 /* Styling Header 2* for all pages */
 .Hdr2{
     float: right;   /* Float right around Header 1 */
-    margin-right: 15%;
+   
     margin-top: 30px;
 }
 
 /* Styling link for visited, active and hover for all pages*/
 a:link, a:visited, a:active {
     text-decoration-line: none; 
-    color:#ccc;
+    color:#4aaaa5;
 }
 a:hover {
     color: blueviolet;
@@ -58,7 +61,7 @@ a:hover {
 /* Styling Page details box for all pages*/
 .Details{
     width:100%;
-    height: 480px;
+    height: 100%;
     background-color: #ccc;
     border: solid #ddd;
 }
@@ -74,14 +77,18 @@ a:hover {
     margin-left: 15%;
     margin-top: 10px;
     font-size: 12px;
+    padding-left:10px;
+    padding-right:10px;
+
 }
+
 
 /* styling the header of details box for all pages */
 header{
-    margin-left: 20px;
-    margin-right: 20px;
+    
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom:20px;
+    margin-bottom: 20px;
     color: #4aaaa5;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -91,25 +98,17 @@ header{
 /* -------------------- Below changes are specific to Index Page Only ----------------- */
 
 /* Class Float_img: contains Images and Paragraphs. This class will help the contents to float around eachother */
-.float_img{
-    width:95%;
-    margin-right: 5%;
-}
+
 
 /*Styling Image of Index Page */
-img{
-    float: left;  /*will float the image on the left of the contents of the float_img class*/
-    height: 100px;
+#profilepic {
+    float: left; /*will float the image on the left of the contents of the float_img class*/
     width: 180px;
-    margin-left: 20px;
     margin-right: 10px;
-    padding-bottom:1px;
+    margin-bottom: 2%;
 }
 
-/*styling the paragraphs for index page only */
-.p2,.p3,.p4,.p5{
-    margin-left: 20px;
-} 
+ 
 .p5{
     padding-bottom: 10px;
  } 
@@ -127,7 +126,7 @@ img{
 
 /* fl_img Class: contains 5 Images. It will help the images to float around eachother */
 .fl_img{
-    width:66%;
+    width:100%;
     margin-right: 20px;
     background-color: #fff;
  }
@@ -135,10 +134,17 @@ img{
  /* Styling the Container Class: It contains Portfolio Images and Descriptions */
 .container {
     float: left;
-    width: 180px;
+    width: 33%;
     position: relative;
     margin: 10px;
 }
+    .container img {
+        margin-right: 2%;
+        width:100%;
+    }
+    #c1,#c2,#c3,#c4,#c5 {
+         width: 33%;       
+    }
     /* Specific styling for container 1 and 2 */
     #c1,#c2{           
         margin-top: 20px;
@@ -152,9 +158,9 @@ img{
      /* Styling for texts / Descriptions of Profile page */
     .text-block {
         position: absolute;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
         bottom: 5px;
-        width:180px;
+        width:100%;
         background-color: teal;
         color: white;
         font-size: 9px;
@@ -162,14 +168,14 @@ img{
     }
 
     /* Specific styling for image 1,3,5 and text 1,3,5 */
-    #img1,#img3,#img5,#txt1,#txt3,#txt5{
+    /*#img1,#img3,#img5,#txt1,#txt3,#txt5{
         margin-left: 20px;
-    }
+    }*/
 
     /* Specific styling for text 2,4 */
-    #txt2, #txt4{
+    /*#txt2, #txt4{
         margin-left: 20px;
-    }
+    }*/
 
 /* Clearing the Float */
 .fl_img::after{
@@ -184,9 +190,16 @@ img{
 /* -------------------- Below changes are specific to Contact Page Only ----------------- */
 
 /* Styling the Form */
-form{
+form {
     color: #aaaaaa;
     font-size: 12px;
+    margin-left:2%; 
+    margin-top:2%;
+}
+textarea,input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right:2%;
 }
 /* -------------------- End of Contact Page Specific changes ---------------------------- */
 
@@ -202,7 +215,7 @@ footer{
     padding-bottom: 0%;
     border-top: solid #4aaaa5;
     text-align: center;
-    width:925px;
+    
 }
 
 /* Sticky class styling to make the Footer Sticky at the bottom of the all pages */
@@ -211,4 +224,31 @@ footer{
     position: sticky;
     bottom: 0;
 }
-
+@media screen and (max-width:768px){
+    #profilepic{
+        width: 50%;
+    }
+    .container {
+        width: 40%;
+    }
+    #c1,#c2,#c3,#c4,#c5{
+        width: 40%;
+    }
+}
+@media screen and (max-width:640px) {
+    #profilepic{
+        width: 100%;
+    }
+    .Hdr2{
+        float: left;
+        margin-left: 15%;
+        padding-bottom: 5%;
+        margin-top:5%;
+    }
+    .container{
+        width: 90%;
+    }
+    #c1,#c2,#c3,#c4,#c5{
+        width:90%;
+    }
+}
