@@ -1,9 +1,9 @@
 /* ------------------------------------------------------------------------------------------------------------------*/
 /*               CSS Styling for Index, Portfolio and Contact Page for Basic Portfolio                               */
 /* ------------------------------------------------------------------------------------------------------------------*/
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 /* body Styling for all pages */
 body{
     width: 80%;
@@ -21,7 +21,8 @@ body{
 
 /* Setting Header Backgroud for all pages*/
 .Hdr{
-    width: 100%;  
+    width: 100%; 
+ 
 }
 
 /* Styling Header 1 for all pages*/
@@ -44,7 +45,7 @@ body{
 /* Styling Header 2* for all pages */
 .Hdr2{
     float: right;   /* Float right around Header 1 */
-   
+    margin-right: 15%; 
     margin-top: 30px;
 }
 
@@ -67,8 +68,8 @@ a:hover {
 
 /* Styling Page details box for all pages*/
 .Details{
-    width:100%;
-    height: 100%;
+    /* width:100%; */
+    /* height: 100%; */
     background-color: #ccc;
     border: solid #ddd;
 }
@@ -86,7 +87,7 @@ a:hover {
     font-size: 12px;
     padding-left:10px;
     padding-right:10px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 
 }
 
@@ -208,6 +209,12 @@ textarea,input[type=text] {
     box-sizing: border-box;
     width: 100%;
     margin-right:2%;
+}
+input[type=submit]{
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    background-color: #4aaaa5; 
+    color: #fff;
 }
 /* -------------------- End of Contact Page Specific changes ---------------------------- */
 
